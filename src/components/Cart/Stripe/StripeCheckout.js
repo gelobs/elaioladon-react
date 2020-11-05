@@ -25,13 +25,11 @@ export default class StripeCheckout extends React.Component {
         <NavbarOther />
         <ProductConsumer>
           {(value) => {
-            const price = value.cartTotal;;
-            console.log(price);
             return (
               <div className="container-fluid">
                 <div className="mt-5">
                   <Elements stripe={stripePromise} options={ELEMENTS_OPTIONS}>
-                    <CheckoutForm price={price} />
+                    <CheckoutForm value={value} />
                   </Elements>
                 </div>
               </div>

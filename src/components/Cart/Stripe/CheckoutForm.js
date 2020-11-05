@@ -96,7 +96,9 @@ const ResetButton = ({onClick}) => (
   </button>
 );
 
-const CheckoutForm = ({price}) => {
+const CheckoutForm = ({value}) => {
+  // console.log(clearCart);
+  const { cartTotal, clearCart } = value;
   const stripe = useStripe();
   const elements = useElements();
   const [error, setError] = useState(null);
@@ -139,6 +141,7 @@ const CheckoutForm = ({price}) => {
       setError(payload.error);
     } else {
       setPaymentMethod(payload.paymentMethod);
+      clearCart();
     }
   };
 
@@ -214,7 +217,7 @@ const CheckoutForm = ({price}) => {
       </fieldset>
       {error && <ErrorMessage>{error.message}</ErrorMessage>}
       <SubmitButton processing={processing} error={error} disabled={!stripe}>
-        Pay ${price}
+        Pay ${cartTotal}
       </SubmitButton>
     </form>
   );
