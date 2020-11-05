@@ -8,7 +8,7 @@ export default class Product extends Component {
   render() {
     const { id, title, img, price, inCart } = this.props.product;
     return (
-      <ProductWrapper className="col-4 col-xs-2 col-md-4 col-lg-4">
+      <ProductWrapper className="col-4 col-xs-4 col-md-4 col-lg-4">
         <div className="card mx-auto">
           <ProductConsumer>
             {(value) => (

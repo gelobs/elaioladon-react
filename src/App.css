@@ -24,15 +24,15 @@ body{
   color: var(--lightYellow);
 }
 .main-section{
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--mainWhite);
 }
 .product-section{
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--mainWhite);
 }
 .about-section{
-  height: 100vh;
+  /* height: 100vh; */
   background-color: var(--mainWhite);
 }
 .btn-yellow{
