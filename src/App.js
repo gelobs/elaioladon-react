@@ -6,7 +6,8 @@ import MainSection from "./sections/MainSection";
 import Details from "./components/Details";
 import Modal from "./components/Modal";
 import Default from "./components/Default";
-import Cart from "./components/Cart/"
+import Cart from "./components/Cart/";
+import StripeCheckout from "./components/Cart/Stripe/StripeCheckout";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/" component={MainSection} />
         <Route path="/details" component={Details} />
         <Route path="/cart" component={Cart} />
+        <Route path="/stripecheckout" component={StripeCheckout} />
         <Route component={Default} />
       </Switch>
       <Modal />

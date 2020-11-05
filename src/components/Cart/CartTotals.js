@@ -35,6 +35,11 @@ export default function CartTotals({ value, history }) {
               clearCart={clearCart}
               history={history}
             />
+            <Link to="/stripecheckout">
+              <button className="btn btn-outline-primary text-capitalize mt-3">
+                pay with card
+              </button>
+            </Link>
           </div>
         </div>
       </div>
