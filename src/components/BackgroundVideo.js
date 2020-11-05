@@ -15,8 +15,8 @@ export default function BackgroundVideo() {
 
 const VideoWrapper = styled.div`
     position: relative;
-    height: 40rem;
-    min-height 20rem;
-    width: 80rem;
+    height: 100vh;
+    object-fit: contain;
+    width: 80%;
     overflow: hidden;
 `
