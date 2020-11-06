@@ -5,11 +5,12 @@ import NavbarOther from "../NavbarOther";
 import CartList from "./CartList";
 import CartTotals from "./CartTotals";
 import EmptyCart from "./EmptyCart";
+import Footer from "../Footer";
 
 export default class Cart extends Component {
   render() {
     return (
-      <section>
+      <section className="d-flex flex-column min-vh-100">
         <NavbarOther />
         <ProductConsumer>
           {(value) => {
@@ -27,6 +28,7 @@ export default class Cart extends Component {
             }
           }}
         </ProductConsumer>
+        <Footer />
       </section>
     );
   }

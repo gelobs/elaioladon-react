@@ -5,6 +5,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import CheckoutForm from "./CheckoutForm";
 import "./stripe.css";
 import { ProductConsumer } from "../../../context";
+import Footer from "../../Footer";
 
 const ELEMENTS_OPTIONS = {
   fonts: [
@@ -22,6 +23,7 @@ export default class StripeCheckout extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <section className="d-flex flex-column min-vh-100">
         <NavbarOther />
         <ProductConsumer>
           {(value) => {
@@ -36,6 +38,8 @@ export default class StripeCheckout extends React.Component {
             );
           }}
         </ProductConsumer>
+        <Footer />
+        </section>
       </React.Fragment>
     );
   }

@@ -7,23 +7,23 @@ import paypal from "../about-img/cards/paypal.svg";
 
 export default function Footer() {
   return (
-    <div className="container-fluid" style={{ backgroundColor: "lightgray" }}>
+    <FooterWrapper className="container-fluid mt-auto">
       <div className="row">
-        <div className="footer-copyright text-center py-3 float-left col-md-6">
+        <div className="footer-copyright text-center py-3 float-left col-xs-6 col-md-6 col-6">
           &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a className="text-yellow" href="/">
+          <span className="text-bright">
             {" "}
             Elaioladon{" "}
-          </a>
+          </span>
         </div>
-        <PaymentImgWrapper className="col-md-4">
+        <PaymentImgWrapper className="col-xs-4 col-md-4 col-4 text-center">
           <img src={visa} alt="Payments" />
           <img src={mastercard} alt="Payments" />
           <img src={amex} alt="Payments" />
           <img src={paypal} alt="Payments" />
         </PaymentImgWrapper>
       </div>
-    </div>
+    </FooterWrapper>
   );
 }
 
@@ -35,3 +35,8 @@ const PaymentImgWrapper = styled.div`
   padding-right: 6px;
   color: #9d9d9d;
 `;
+
+const FooterWrapper = styled.div`
+background-color: var(--mainGrey);
+position: relative;
+`
