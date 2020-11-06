@@ -10,7 +10,7 @@ export default class MainSection extends Component {
         return (
             <React.Fragment>
             <NavbarMain />
-            <div className="main-section" id="main">
+            <div id="main">
                 <Title text="Olive oil from the region of Paramythia"/>
                 <BackgroundVideo />
             </div>

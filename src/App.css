@@ -3,7 +3,7 @@
   --lightYellow: #ffa400;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
-  --mainBlue:
+  --mainGrey: rgb(121, 118, 118);
 }
 body{
   font-family: 'Courier New', Courier, monospace !important;
@@ -23,18 +23,7 @@ body{
 .text-bright{
   color: var(--lightYellow);
 }
-.main-section{
-  /* height: 100vh; */
-  background-color: var(--mainWhite);
-}
-.product-section{
-  /* height: 100vh; */
-  background-color: var(--mainWhite);
-}
-.about-section{
-  /* height: 100vh; */
-  background-color: var(--mainWhite);
-}
+
 .btn-yellow{
   background: transparent;
   text-transform: capitalize;

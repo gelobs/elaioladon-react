@@ -26,5 +26,5 @@ export default class AboutSection extends Component {
 }
 
 const AboutHeader = styled.div`
-  background-color: grey;
+  background-color: var(--mainGrey);
 `;
