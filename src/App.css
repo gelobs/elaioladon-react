@@ -5,11 +5,16 @@
   --mainDark: #232528;
   --mainGrey: rgb(121, 118, 118);
 }
+/* *{
+  outline: 1px solid red;
+} */
+
 body{
   font-family: 'Courier New', Courier, monospace !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
+
 .text-title{
   font-family: 'Special Elite', cursive;
   letter-spacing: 0.2rem;

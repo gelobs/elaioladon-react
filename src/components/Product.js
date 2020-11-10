@@ -8,18 +8,18 @@ export default class Product extends Component {
   render() {
     const { id, title, img, price, inCart } = this.props.product;
     return (
-      <ProductWrapper className="col-4 col-xs-4 col-md-4 col-lg-4">
+      <ProductWrapper className="col-md-4 col-12 py-3 mx-auto">
         <div className="card mx-auto">
           <ProductConsumer>
             {(value) => (
               <div
-                className="img-container p-5"
+                className="img-container"
                 onClick={() => {
                   value.handleDetail(id);
                 }}
               >
                 <Link to="/details">
-                  <img src={img} alt="product" className="card-img-top" />
+                  <img src={img} alt="product" style={{width:"15vh", height:"50vh"}} className="card-img-top" />
                 </Link>
                 <button
                   className="cart-btn"
@@ -69,8 +69,7 @@ const ProductWrapper = styled.div`
   .card {
     border-color: transparent;
     transition: all 1s linear;
-    width: 30vh;
-
+    width: 50vh;
   }
   .card-footer {
     background: transparent;
@@ -89,12 +88,13 @@ const ProductWrapper = styled.div`
   .img-container {
     position: relative;
     overflow: hidden;
+    margin: auto;
   }
   .card-img-top {
     transition: all 1s linear;
   }
   .img-container:hover .card-img-top {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .cart-btn {
     position: absolute;

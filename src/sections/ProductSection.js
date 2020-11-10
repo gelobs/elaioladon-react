@@ -7,18 +7,18 @@ export default class ProductSection extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="py-4">
-          <div className="container" id="product">
-            <Title text="our products" />
-            <div className="row">
-              <ProductConsumer>
-                {(value) => {
-                  return value.products.map((product) => {
-                    return <Product key={product.id} product={product} />;
-                  });
-                }}
-              </ProductConsumer>
-            </div>
+        <span id="product">
+          <Title text="our products" />
+        </span>
+        <div className="container-fluid">
+          <div className="row">
+            <ProductConsumer>
+              {(value) => {
+                return value.products.map((product) => {
+                  return <Product key={product.id} product={product} />;
+                });
+              }}
+            </ProductConsumer>
           </div>
         </div>
       </React.Fragment>

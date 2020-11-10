@@ -14,19 +14,7 @@ export default class Navbar extends Component {
         </Link>
         <span className="text-bright text-title mr-5">Elaioladon</span>
         <ul className="nav navbar-nav">
-          <ButtonContainer className="mr-4">
-          <ScrollLink
-            activeClass=""
-            to="main"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={1000}
-          >
-            Main
-          </ScrollLink>
-          </ButtonContainer>
-          <ButtonContainer className="mr-4">
+          <ButtonContainer>
           <ScrollLink
             activeClass=""
             to="product"
