@@ -18,7 +18,7 @@ export const storeProducts = [
     price: 6,
     company: "Elaioladon Paramythias",
     info:
-      "Elaioladon's natural Reed Olives is a product of the famous Reed variety, the fruit of which is harvested whem it os extremely large and has a natural black color. The olive oil produced from reed olives is ideal for cooking and frying. ",
+      "Elaioladon's natural Reed Olives is a product of the famous Reed variety, the fruit of which is harvested when it is extremely large and has a natural black color. The olive oil produced from reed olives is ideal for cooking and frying. ",
     inCart: false,
     count: 0,
     total: 0,
@@ -30,7 +30,7 @@ export const storeProducts = [
     price: 7,
     company: "Elaioladon Paramythias",
     info:
-      "Extra virgin olive oil from the variety of Ladolia olives, harvested from the region of Paramythia. Famous for its low acidity due to its unique mild aroma, balanced taste and high nutritional value.",
+      "Extra virgin olive oil from the variety of Ladolia olives, harvested from the region of Paramythia. Famous for its low acidity, due to its unique mild aroma, balanced taste and high nutritional value.",
     inCart: false,
     count: 0,
     total: 0,
